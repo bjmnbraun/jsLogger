@@ -1,0 +1,9 @@
+{
+        "files": [
+                "dist/"
+        ],
+        "homepage": "https://github.com/sunnykgupta/jsLogger/",
+        "version": "1.0.0",
+        "name": "jsLogger",
+        "main": "dist/jsLogger.js"
+}

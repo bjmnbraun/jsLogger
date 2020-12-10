@@ -7,6 +7,7 @@ window.console = (function(origConsole) {
     isSaveLog = false,
     logArray = {
       logs: [],
+      debugs: [],
       errors: [],
       warns: [],
       infos: []
@@ -18,6 +19,12 @@ window.console = (function(origConsole) {
       isDebug &&
         origConsole.log &&
         origConsole.log.apply(origConsole, arguments);
+    },
+    debug: function() {
+      this.addLog(arguments, "debugs");
+      isDebug &&
+        origConsole.debug &&
+        origConsole.debug.apply(origConsole, arguments);
     },
     warn: function() {
       this.addLog(arguments, "warns");

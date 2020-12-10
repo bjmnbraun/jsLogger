@@ -44,7 +44,7 @@ window.console = (function(origConsole) {
         origConsole.info &&
         origConsole.info.apply(origConsole, arguments);
     },
-    debug: function(bool) {
+    setDebug: function(bool) {
       isDebug = bool;
     },
     saveLog: function(bool) {

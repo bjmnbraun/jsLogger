@@ -51,6 +51,9 @@ window.console = (function(origConsole) {
     },
     logArray: function() {
       return logArray;
+    },
+    uninstallJSLogger: function() {
+      window.console = origConsole;
     }
   };
 })(window.console);
